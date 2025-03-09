@@ -1,4 +1,6 @@
-﻿namespace Ejercicio11_POO
+﻿using System;
+
+namespace Ejercicio11_POO
 {
     class Hardware
     {
@@ -10,14 +12,11 @@
             _nombre = nombre;
             _fabricante = fabricante;
         }
-    }
 
-    class Processador : Hardware
-    {
-        public Processador(string nombre, string fabricante) : base(nombre, fabricante)
+        public void mostrarInformacion()
         {
-            
+            Console.WriteLine("Nombre: " + _nombre 
+            + " Fabricante: " + this._fabricante);
         }
-        
     }
 }
